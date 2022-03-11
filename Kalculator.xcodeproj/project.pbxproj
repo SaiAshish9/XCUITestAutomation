@@ -14,7 +14,7 @@
 		40BB024C1ECDFBEF00A6F9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BB024A1ECDFBEF00A6F9CF /* LaunchScreen.storyboard */; };
 		40C7D05C1F164CD900E8A4E1 /* TrigonoCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7D05B1F164CD900E8A4E1 /* TrigonoCalcViewController.swift */; };
 		40D59A31201471A40079AA69 /* JSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D59A30201471A40079AA69 /* JSButton.swift */; };
-		40D59A332014752D0079AA69 /* JSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D59A322014752D0079AA69 /* JSLabel.swift */; };
+		9733149E27DB379700A305A0 /* PerformanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9733149D27DB379700A305A0 /* PerformanceUITests.swift */; };
 		97AF133927D9C84300FC552E /* KalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF133827D9C84300FC552E /* KalculatorUITests.swift */; };
 		97AF133B27D9C84300FC552E /* KalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF133A27D9C84300FC552E /* KalculatorUITestsLaunchTests.swift */; };
 		97AF134527D9C9B500FC552E /* NumberSelectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF134427D9C9B500FC552E /* NumberSelectTests.swift */; };
@@ -45,7 +45,7 @@
 		40BB024D1ECDFBEF00A6F9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C7D05B1F164CD900E8A4E1 /* TrigonoCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrigonoCalcViewController.swift; sourceTree = "<group>"; };
 		40D59A30201471A40079AA69 /* JSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSButton.swift; sourceTree = "<group>"; };
-		40D59A322014752D0079AA69 /* JSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSLabel.swift; sourceTree = "<group>"; };
+		9733149D27DB379700A305A0 /* PerformanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceUITests.swift; sourceTree = "<group>"; };
 		97AF133627D9C84300FC552E /* KalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AF133827D9C84300FC552E /* KalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalculatorUITests.swift; sourceTree = "<group>"; };
 		97AF133A27D9C84300FC552E /* KalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -105,7 +105,6 @@
 				40BB024A1ECDFBEF00A6F9CF /* LaunchScreen.storyboard */,
 				40BB024D1ECDFBEF00A6F9CF /* Info.plist */,
 				40C7D05B1F164CD900E8A4E1 /* TrigonoCalcViewController.swift */,
-				40D59A322014752D0079AA69 /* JSLabel.swift */,
 			);
 			path = Kalculator;
 			sourceTree = "<group>";
@@ -136,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				97AF134427D9C9B500FC552E /* NumberSelectTests.swift */,
+				9733149D27DB379700A305A0 /* PerformanceUITests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -206,11 +206,12 @@
 				TargetAttributes = {
 					40BB023D1ECDFBEF00A6F9CF = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 7P4K4M8A4Q;
+						DevelopmentTeam = 8WH83DMLCD;
 						ProvisioningStyle = Automatic;
 					};
 					97AF133527D9C84300FC552E = {
 						CreatedOnToolsVersion = 13.2.1;
+						DevelopmentTeam = 8WH83DMLCD;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 40BB023D1ECDFBEF00A6F9CF;
 					};
@@ -265,7 +266,6 @@
 			files = (
 				40BB02441ECDFBEF00A6F9CF /* ViewController.swift in Sources */,
 				40BB02421ECDFBEF00A6F9CF /* AppDelegate.swift in Sources */,
-				40D59A332014752D0079AA69 /* JSLabel.swift in Sources */,
 				40D59A31201471A40079AA69 /* JSButton.swift in Sources */,
 				40C7D05C1F164CD900E8A4E1 /* TrigonoCalcViewController.swift in Sources */,
 			);
@@ -275,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9733149E27DB379700A305A0 /* PerformanceUITests.swift in Sources */,
 				97AF134727D9CBC600FC552E /* BaseTest.swift in Sources */,
 				97AF134927D9CF2000FC552E /* CalculatorPage.swift in Sources */,
 				97AF133B27D9C84300FC552E /* KalculatorUITestsLaunchTests.swift in Sources */,
@@ -428,11 +429,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7P4K4M8A4Q;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WH83DMLCD;
 				INFOPLIST_FILE = Kalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jog.Kalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -441,11 +445,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7P4K4M8A4Q;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WH83DMLCD;
 				INFOPLIST_FILE = Kalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jog.Kalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -457,8 +464,11 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WH83DMLCD;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -467,6 +477,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = co.sai.KalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,6 +495,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8WH83DMLCD;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
